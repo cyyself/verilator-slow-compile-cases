@@ -6,3 +6,12 @@ CFLAGS := -O3 -faligned-new -fbracket-depth=4096 -fcf-protection=none -Qunused-a
 
 VSimTop___024root__DepSet_hd5918264__148.o: VSimTop___024root__DepSet_hd5918264__148.cpp
 	$(CXX) $(CFLAGS) -c -o $@ $<
+
+.PHONY: clean check
+
+clean:
+	rm -f VSimTop___024root__DepSet_hd5918264__148.o
+
+check:
+	$(MAKE) clean
+	ulimit -t 900; $(MAKE) VSimTop___024root__DepSet_hd5918264__148.o
