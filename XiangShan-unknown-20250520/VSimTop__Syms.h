@@ -1,0 +1,102 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Symbol table internal header
+//
+// Internal details; most calling programs do not need this header,
+// unless using verilator public meta comments.
+
+#ifndef VERILATED_VSIMTOP__SYMS_H_
+#define VERILATED_VSIMTOP__SYMS_H_  // guard
+
+#include "verilated.h"
+
+// INCLUDE MODEL CLASS
+
+#include "VSimTop.h"
+
+// INCLUDE MODULE CLASSES
+#include "VSimTop___024root.h"
+#include "VSimTop___024unit.h"
+
+// DPI TYPES for DPI Export callbacks (Internal use)
+
+// SYMS CLASS (contains all model state)
+class alignas(VL_CACHE_LINE_BYTES)VSimTop__Syms final : public VerilatedSyms {
+  public:
+    // INTERNAL STATE
+    VSimTop* const __Vm_modelp;
+    bool __Vm_activity = false;  ///< Used by trace routines to determine change occurred
+    uint32_t __Vm_baseCode = 0;  ///< Used by trace routines when tracing multiple models
+    VlDeleter __Vm_deleter;
+    bool __Vm_didInit = false;
+
+    // MULTI-THREADING
+    VlThreadPool* __Vm_threadPoolp;
+    bool __Vm_even_cycle__ico = false;
+    bool __Vm_even_cycle__act = false;
+    bool __Vm_even_cycle__nba = false;
+
+    // MODULE INSTANCE STATE
+    VSimTop___024root              TOP;
+    VSimTop___024unit              TOP____024unit;
+
+    // SCOPE NAMES
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_1;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_10;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_11;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_12;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_13;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_14;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_15;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_16;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_17;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_18;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_19;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_2;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_20;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_21;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_22;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_3;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_4;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_5;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_6;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_7;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_8;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__IntRegCache__assert___05Fassert_9;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_1;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_10;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_11;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_12;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_13;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_14;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_15;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_16;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_17;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_18;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_19;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_2;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_20;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_21;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_22;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_3;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_4;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_5;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_6;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_7;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_8;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__backend__inner_dataPath__regCache__MemRegCache__assert___05Fassert_9;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__memBlock__inner_uncache;
+    VerilatedScope __Vscope_SimTop__l_soc__core_with_l2__core__memBlock__inner_uncache__assert___05Fassert_2;
+
+    // CONSTRUCTORS
+    VSimTop__Syms(VerilatedContext* contextp, const char* namep, VSimTop* modelp);
+    ~VSimTop__Syms();
+
+    // METHODS
+    const char* name() { return TOP.name(); }
+};
+
+#endif  // guard
